@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       Dungeons Dragons and school-Chained storm
+    </title>
+<link rel="icon" type="image/gif/png" href="favicon.ico">
+<style>
+#intro{
+border-radius: 90px;
+border: 2px solid #0645aa;
+background: #0000ff;
+padding: 20px;
+}
+#posts{
+  border-radius: 25px;
+  border: 2px solid #008B8B;
+  background:#5F9EA0;
+  padding: 20px;   
+}
+#grad1{
+background-color: #474747;
+background-image: radial-gradient(#474747, #050505);
+}
+.button_css{
+background-color: #231F1E;
+	color: #CA29CD;
+border-color: #231F1F;
+}
+#grad2{
+background-color: #474749;
+background-image: radial-gradient(#474749, #060505);
+}
+#nav{
+  float: left;
+  width: 30%;
+  background: #201C1B;
+  padding: 20px;
+}
+.dropbtn {
+  background-color: #231F1E;
+  color: #CA29CD;
+  padding: 16px;
+  font-size: 16px;
+  border: #231F1F;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #231F1E;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #231F1E;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show {display:block;} 
+</style>
+</head>
+<body>
+<body style="background-color:#000000;">
+<header><center><img src="dungeons.png"></center></header>
+<section><nav><div style="background-color: #201C1B;"><input type="button" class="button_css" value="Main page" onclick="location.href='main.html'"/><div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">D&D club</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="button" class="button_css" value="ghost campagin so far" onclick="location.href='Luke.html'"/>
+    <input type="button" value="waterdeep dragon heist so far" class="button_css" onclick="location.href='WDH.html'"/>
+    <input type="button" class="button_css" value="Greek campaign so far" onclick="location.href='sparta.html'"/>
+  </div>
+</div> <input type="button" value="One shots" class="button_css" onclick="location.href='one.html'"/><input type="button" class="button_css" value="Chained storms" onclick="location.href='home.html'"/><input type="button" value="Forum" class="button_css" onclick="location.href='forum.html'"/><input type="button" value="High rollers recap" class="button_css" onclick="location.href='HR.html'"/><br><input type="button" value="Lander Brightwood" class="button_css" onclick="location.href='LH.html'"/><input type="button" value="Rendsan" class="button_css" onclick="location.href='R.html'"/><input type="button" value="Coffee bear" class="button_css" onclick="location.href='Coffee.html'"/><input type="button" value="Bubbly girl" class="button_css" onclick="location.href='BG.html'"/><input type="button" value="The other one" class="button_css" onclick="location.href='OO.html'"/><p ALIGN=RIGHT><input type="button" value="login" onclick="location.href='login.html'"/><input type="button" value="signup" onclick="location.href='signup.html'"/></nav></div>
+<article>
+<div id="grad1">
+<div id="intro">
+<p>This is the weekly recap of the D&D session i play in, we also have a podcast of which I am the editor of. James = DM  Luke = rendsan  Conor =  Sam =   Johnny =  Josh = </p>
+</div>
+<div id="posts">
+<h1> Prawn crackers</h1>
+</div>
+</div>
+</article>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+</body>
+</html>
